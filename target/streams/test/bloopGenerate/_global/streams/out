@@ -1,0 +1,4 @@
+[debug] [jdbcex-test] Classpath dependencies List()
+[debug] [jdbcex-test] Dependencies from configurations List(jdbcex)
+[debug] Bloop wrote the configuration of project 'jdbcex-test' to '/Users/zenw/JDBCEx/.bloop/jdbcex-test.json'
+[success] Generated .bloop/jdbcex-test.json

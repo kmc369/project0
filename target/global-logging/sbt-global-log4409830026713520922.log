@@ -1,0 +1,22 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, Some(f747d742-acb6-49c5-a945-18fa53a6bcf7), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@491893f8, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/zenw/JDBCEx/target/scala-2.11/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:54:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.write("Executing 'INSERT INTO MoviesInDataBase (MovieName, Genre, ReleaseYear, LeadRole) VALUES ('"+movieName+"','"+genre+ "' ,"+releaseYear+" , '"+leadRole+"');")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:69:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.write("Executing 'SELECT * FROM MoviesInDatabase';")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:89:6: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m     log.write("Executing 'DELETE FROM MoviesInDatabase WHERE MovieName = ('"+moviedeleted+"');")[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:111:6: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m     log.write("Executing 'UPDATE MoviesInDatabase SET ReleaseYear =  ('"+year+"') , LeadRole = ('"+newLead+"')  WHERE MovieName = ('"+update+"');")[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

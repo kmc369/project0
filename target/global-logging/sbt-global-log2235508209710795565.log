@@ -1,0 +1,27 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(~run, Some(8f2e9700-9b37-4d0f-be22-6b1214fc5546), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@5238896f, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/zenw/JDBCEx/target/scala-2.11/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:54:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.write("Executing 'INSERT INTO MoviesInDataBase (MovieName, Genre, ReleaseYear, LeadRole) VALUES ('"+movieName+"','"+genre+ "' ,"+releaseYear+" , '"+leadRole+"');")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:69:7: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m      log.write("Executing 'SELECT * FROM MoviesInDatabase';")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:89:6: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m     log.write("Executing 'DELETE FROM MoviesInDatabase WHERE MovieName = ('"+moviedeleted+"');")[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:111:6: not found: value log[0m
+[0m[[0m[31merror[0m] [0m[0m     log.write("Executing 'UPDATE MoviesInDatabase SET ReleaseYear =  ('"+year+"') , LeadRole = ('"+newLead+"')  WHERE MovieName = ('"+update+"');")[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 4 s, completed Jan 11, 2022 3:55:26 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, Some(CommandSource(console0)))[0m

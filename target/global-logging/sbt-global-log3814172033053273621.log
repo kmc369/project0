@@ -1,0 +1,24 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(~run, Some(65eb9415-cfcc-437f-a995-0c3e1de7a60b), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@28ce75ec, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/zenw/JDBCEx/target/scala-2.11/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:54:86: not found: value MovieName[0m
+[0m[[0m[31merror[0m] [0m[0m       val resultSet = statement.executeQuery("SELECT MOVIENAME FROM MOVIES WHERE " +MovieName+ " ");[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:58:12: not found: value MovieName[0m
+[0m[[0m[31merror[0m] [0m[0m       if (MovieName == resultSet){[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:59:18: not found: value MovieName[0m
+[0m[[0m[31merror[0m] [0m[0m         println(MovieName)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Jan 7, 2022 4:10:27 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, Some(CommandSource(console0)))[0m

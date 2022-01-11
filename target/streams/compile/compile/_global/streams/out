@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:65:44: not found: value query[0m
+[0m[[0m[31merror[0m] [0m[0m      var reslt1 = statement.executeUpdate(query);[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -1,0 +1,35 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(~run, Some(6c84d692-c421-4743-8eb6-7d165670be9a), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@7d28cdcd, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/zenw/JDBCEx/target/scala-2.11/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:7:22: Reference to uninitialized value driver[0m
+[0m[[0m[33mwarn[0m] [0m[0m       Class.forName(driver)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:8:8: Reference to uninitialized variable connection[0m
+[0m[[0m[33mwarn[0m] [0m[0m       connection = DriverManager.getConnection(url, username, password)[0m
+[0m[[0m[33mwarn[0m] [0m[0m       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:8:49: Reference to uninitialized value url[0m
+[0m[[0m[33mwarn[0m] [0m[0m       connection = DriverManager.getConnection(url, username, password)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:8:54: Reference to uninitialized value username[0m
+[0m[[0m[33mwarn[0m] [0m[0m       connection = DriverManager.getConnection(url, username, password)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:8:64: Reference to uninitialized value password[0m
+[0m[[0m[33mwarn[0m] [0m[0m       connection = DriverManager.getConnection(url, username, password)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zenw/JDBCEx/src/main/scala/JDBCEx.scala:9:24: Reference to uninitialized variable connection[0m
+[0m[[0m[33mwarn[0m] [0m[0m       val statement = connection.createStatement()[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m6 warnings found[0m
+[0m[[0m[31merror[0m] [0m[0mNonzero exit code: 1[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) Nonzero exit code: 1[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 7 s, completed Jan 10, 2022 3:04:18 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
