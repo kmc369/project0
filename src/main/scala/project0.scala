@@ -61,7 +61,8 @@ import java.io.PrintWriter
       //}catch{
         //case bui: BadUserInputExceptions => println("THIS MOVIE IS ALREADY IN YOUR LIBRARY")
     //}
-
+      println("WOULD YOU LIKE TO ADD, UPDATE, VIEW, OR DELETE A MOVIE FROM YOUR LIBRARY?")
+     
       
     
     }
@@ -141,14 +142,24 @@ import java.io.PrintWriter
      
      
 
+
+     
+
+
+
+
+
+      var exit = false;
+
+    do{
+
      var scan = new Scanner(System.in)  
      println(" WELCOME TO YOUR MOVIE LIBRARY")
      println("---------------------------------")
      println("WOULD YOU LIKE TO ADD, UPDATE, VIEW, OR DELETE A MOVIE FROM YOUR LIBRARY?")
      var decision = scan.nextLine().toUpperCase;
 
-
-     if (decision == "ADD"){
+    if (decision == "ADD"){
       add(connection:Connection);
      } 
 
@@ -164,9 +175,26 @@ import java.io.PrintWriter
       update(connection:Connection);
      }
 
+     if(decision == "QUIT"){
+       exit=true;
+     }
+    
+    
+    
+    
+    
+    
+    
+    }while(!exit)
 
 
-       
+     
+
+
+
+
+
+    
        
        
        

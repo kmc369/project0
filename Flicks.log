@@ -1,1 +1,1 @@
-Executing 'INSERT INTO MoviesInDataBase (MovieName, Genre, ReleaseYear, LeadRole) VALUES ('Jeepers Creepers 2','Horror' ,2003 , 'Justin Long');
+Executing 'INSERT INTO MoviesInDataBase (MovieName, Genre, ReleaseYear, LeadRole) VALUES ('macbook','action' ,2080 , 'me');Executing 'UPDATE MoviesInDatabase SET ReleaseYear =  ('2016') , LeadRole = ('keisha')  WHERE MovieName = ('macbook');Executing 'DELETE FROM MoviesInDatabase WHERE MovieName = ('macbook');
